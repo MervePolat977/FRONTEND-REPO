@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /*instead of doing that,*/
+      /*
+        p{
+            color: red;
+        }
+        h2{
+            color: red;
+        }*/
+
+      /*do that*/
+      /*spc(0,0,1)*/
+      p,h2, div {  /*that'll affect paragraph which is exluded of  the divs*/
+        color: green;
+      }
+
+      /*If the specificity is the same, the most below is more powerful*/
+      /*spc(0,0,1)*/
+      h2{
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--div.container-->
+    <div class="container">
+        Here is inside of the div
+      <p class="paragraph1">Paragraph1</p>
+      <p class="paragraph2">Paragraph2</p>
+      <p class="paragraph3">Paragraph3</p>
+    </div>
+
+
+    <p>Paragraph which is excluded(outside) of the DIVs</p>
+    <!--div.container-->
+    <div class="container">
+      <h2>DIV-2</h2>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*HORIZONTAL ALIGN*/
+        /*
+        .long-text {
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: justify;
+            text-align: initial;
+            text-align: inherit;
+            text-align: start;
+            text-align: end;
+        }
+
+        .short-text {
+            text-align: center;
+            text-align: justify;
+            text-align: right;
+        }
+        */
+
+
+        /*
+            VERTICAL ALIGNS: 
+            works with table cells (display:table-cell;)
+            we can position images too cause they can be thought as table cells as well
+        */
+
+        p{
+            border: 2px solid maroon;
+            height:450px;
+        }
+        .long-text {
+            display: table-cell;
+            vertical-align: center;
+            vertical-align: baseline; /*default*/
+            vertical-align: bottom;
+            vertical-align: sub;
+            vertical-align: super;
+            vertical-align: text-bottom;
+            vertical-align: text-top;
+            vertical-align: top;
+            vertical-align: middle;  /*center the text vertically*/
+        }
+
+        p.short-text {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <p class="long-text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, error nulla adipisci voluptatibus sapiente rerum! Libero nostrum ullam fuga repellat vel unde neque deleniti. Accusamus maxime accusantium temporibus quasi aliquid.
+        Amet ullam, blanditiis, dolores odit ipsam qui repudiandae, velit facere possimus illum iure dolorum minima labore. Dignissimos, natus praesentium. Autem reiciendis eveniet in deleniti tenetur laborum facilis quis odio ipsa.
+        Consectetur dicta dignissimos tempora explicabo, voluptatem aperiam perspiciatis natus, voluptatum beatae nobis sequi perferendis repudiandae autem quidem odit itaque, tenetur voluptatibus blanditiis voluptate cum cumque consequatur eaque! Dicta, praesentium. Tempora?
+        Voluptas atque fugit est culpa sapiente beatae vitae architecto quod, natus nam similique dolore libero ea aperiam illo, accusamus eum ab, iure voluptate nesciunt distinctio ullam recusandae. Sint, hic quae.
+        Sequi qui accusantium architecto magni alias deleniti dolore sed perspiciatis aliquid culpa aperiam provident porro quisquam quasi assumenda ad, aliquam, dolorem velit adipisci iste cupiditate fuga, blanditiis cumque est. Accusantium.
+        Consequuntur deleniti aliquam sint placeat eveniet quis quo similique assumenda dolore enim quaerat aspernatur maxime modi qui ex id tempora possimus, cum nemo nisi nobis unde fugiat omnis? Quam, laborum.
+        Distinctio, iusto atque! Recusandae ex aliquam corrupti animi autem delectus. Ut ducimus dolore harum officia adipisci aut, fugiat, accusantium placeat est dolor cupiditate ad corporis dolorum quia nulla nisi soluta?
+        Reprehenderit aliquid hic quisquam accusamus quos, facilis laborum eaque inventore ipsam, amet ex magnam cumque, at eius quasi. Officia possimus eum sit necessitatibus sapiente obcaecati aliquid deserunt quas dolores voluptatem!
+    </p><br>
+
+    <p class="short-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</body>
+</html>

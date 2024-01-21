@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*this will effect even the paragraph which is exluded DIVs*/
+        /*
+        p,h2,div{
+            color: rgb(235, 156, 10);
+        }*/
+
+        /*this effecs only p and h2 inside of the divs*/
+        /*
+        div p, h2{
+            color: blue;
+        }
+        */
+
+        /*this effecs only p and h2 inside of the divs*/
+        div>p {
+            color: purple;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        Here is the inside of the div
+        <p class="paragpraph1">
+            Paragraph1
+        </p>
+
+        <p class="paragraph2">
+            Paragraph2
+        </p>
+
+        <p class="paragraph3">
+            Paragraph3
+        </p>
+    </div>
+
+    <p id="p-with-no-div">Paragraph that is excluded(outside) of the divs</p>
+
+    <div>
+        <p>Paragraph with div but no class</p>
+    </div>
+
+    <div class="container">
+        <h2>div2</h2>
+    </div>
+</body>
+</html>

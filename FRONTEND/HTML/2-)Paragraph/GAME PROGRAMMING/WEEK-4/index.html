@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head><title>EXAMPLE</title></head>
+<body>
+<canvas id="myCanvas" width="500" height="500" style="border: 30px dashed blue;"></canvas>
+
+
+<script type="text/javascript">
+// window.onload = canvas;
+var myCanvas = document.getElementById("myCanvas");
+var context = myCanvas.getContext("2d"); 
+
+var CircleRadius = 50;
+var CirclePositionX = -CircleRadius;
+var CirclePositionY = context.canvas.height/2;
+
+var updateCanvas = function() {
+
+    context.fillStyle   = "#FFF";
+    context.fillRect(0, 0, context.canvas.width, context.canvas.height);
+
+    context.beginPath();
+    context.fillStyle   = "red";
+    context.arc(CirclePositionX, CirclePositionY, CircleRadius, 0, 2 * Math.PI);
+    context.fill();
+
+    CirclePositionX = CirclePositionX + 1; // this line moves the object...
+
+};
+ 
+//updateInterval()
+setInterval(function() {
+    updateCanvas();
+}, 10);
+
+</script>

@@ -1,0 +1,21 @@
+/*External css*/
+
+table td{
+    color: rgb(18, 195, 136);
+    background-color: burlywood;
+}
+
+a:link{
+    text-decoration: underline;
+    color: blue;
+}
+
+a:visited {
+    text-decoration: underline;
+    color: purple;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: 100;
+}

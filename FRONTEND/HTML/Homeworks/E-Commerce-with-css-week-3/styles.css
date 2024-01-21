@@ -1,0 +1,189 @@
+/*Choose a layout*/
+/*Define the necessary div selectors*/
+
+/*Format the menu or navigation*/
+.nav {
+    letter-spacing: 0.3em;
+    word-spacing: 0.2em;
+}
+
+/*Redesign menu items as an unordered list*/
+.nav ul {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
+/* Style menu items on hover*/
+.nav ul li:hover {
+    text-decoration: underline;
+    color: red;
+    font-size: x-large;
+}
+
+/*Set margin and padding for menu items*/
+.main ul li {
+    margin: 10px;
+    padding-left: 25px;
+}
+
+/*Apply background color or image to all pages*/
+body {
+    background: rgb(165, 180, 222);
+    /* Format text*/
+    font-family: Tahoma, Verdana, Courier; 
+    font-size: 12px;
+    color: white
+}
+
+
+
+
+h2 {
+    text-decoration: uunderline;
+}
+
+
+/*LAYOUT*/
+* {
+    box-sizing: border-box;
+}
+
+/*Style the header*/
+header {
+    background-color: rgb(121, 140, 198);
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+/* Create two columns boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /*only for demonstration, should be removed*/
+    background: rgb(136, 151, 196);
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: rgb(143, 156, 194);
+    height: 300px; /*onşy for demonstration, ,should be removed*/
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Style the footer*/
+footer {
+    background-color: rgb(121, 140, 198);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    height: 100px;
+    padding-top: 40px;
+}
+
+/*Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens*/
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+img {
+    background-color: none;
+}
+
+
+.centered-image {
+    background-color: #131313;
+    border-radius: 0.5%;
+}
+
+
+
+
+
+
+
+
+
+/*WEEK3 ASSIGNMENTS*/
+.nav ul li {
+    border: 1px solid #fff; /* Border style and color */
+    border-radius: 5px; /* Border radius for rounded corners */
+    margin: 10px;
+    padding-left: 25px;
+}
+
+/* Float the image to the left and allow text to wrap around it */
+.about-image {
+    float: left;
+    margin: 0 20px 20px 0; /* Adjust margins for spacing */
+}
+
+/* Define the overlay title style */
+.overlay-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Background color with opacity */
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+}
+
+
+/* Apply a scale transformation on an element */
+.transformed-element {
+    transform: scale(1.2); /* Scales the element by 120% */
+}
+
+
+
+.overlay-title {
+    margin-left: 500px;
+}
+
+
+
+/*transition*/
+/*makes "Discover our amazing content and products!" bigger when we hover the text*/
+.hover-zoom:hover {
+    font-size: 140%; 
+    transition: font-size 0.5s; /* It'll slightly change */
+    cursor: pointer; /* İmlecin el işareti olmasını sağlar (isteğe bağlı) */
+}
+
+
+
+/* Add border and border radius to menu items */
+.item-list li {
+    border: 1px solid #153cd9; /* Border style and color */
+    border-radius: 10px; /* Border radius for rounded corners */
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin: 5px 0; /* Adjust margin as needed */
+    background: rgb(226, 212, 212);
+}

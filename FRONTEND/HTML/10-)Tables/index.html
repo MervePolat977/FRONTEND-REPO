@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <table border="2" style="width: 100%; height:175px">
+        <thead>
+            <tr bgcolor="yellow">
+                <th>Team Name</th>
+                <th>Win</th>
+                <th>Drew</th>
+                <th>Lose</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr bgcolor="blue">
+                <td>Galatasaray</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+                <td>12</td>
+            </tr>
+            <tr bgcolor="blue">
+                <td>Fenerbahçe</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1</td>
+                <td>12</td>
+            </tr>
+            <tr bgcolor="aqua">
+                <td>Beşiktaş</td>
+                <td>2</td>
+                <td>4</td>
+                <td>1</td>
+                <td>12</td>
+            </tr>
+            <tr bgcolor="aqua">
+                <td>Trabzonspor</td>
+                <td>1</td>
+                <td>5</td>
+                <td>1</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br><br>
+
+
+
+    <table border="2" style="width: 210px;">
+        <thead>
+            <tr>
+                <th>Red</th>
+                <th>Blue</th>
+                <th>Green</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height: 30px;">
+                <td bgcolor="red"></td>
+                <td bgcolor="blue"></td>
+                <td bgcolor="green"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+
+    <!--colspan-->
+    <table border="2" style="width: 210px;">
+        <thead>
+            <tr>
+                <th>Red</th>
+                <th colspan="2">Blue-Green</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height: 30px;">
+                <td bgcolor="red"></td>
+                <td bgcolor="blue"></td>
+                <td bgcolor="green"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+
+    <!--rowspan-->
+    <table border="2" style="width: 300px;">
+        <thead>
+            <tr>
+                <th>Red</th>
+                <th>Blue</th>
+                <th>Green</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height: 30px;">
+                <td bgcolor="red"></td>
+                <td bgcolor="blue"></td>
+                <td bgcolor="green" rowspan="2"></td>
+            </tr>
+            <tr style="height: 30px;">
+                <td>Pencil</td>
+                <td>Sky</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+
+    
+    <!--rowspan-->
+    <table border="1">
+        <thead>
+            <tr>
+                <td style="width: 60px;">Red</td>
+                <td style="width: 60px;">Green</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height: 40px;">
+                <td colspan="2" bgcolor="red"></td>
+            </tr>
+            <tr style="height: 40px;">
+                <td bgcolor="red"></td>
+                <td bgcolor="green" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td bgcolor="red" style="height: 30px;"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+     
+
+    <!--Practise-->
+    <table border="1">
+        <thead>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="right">08:00</td>
+                <td colspan="5" align="center">PREPARATION</td>
+            </tr>
+            <tr>
+                <td>08:00-09:00</td>
+                <td colspan="5" align="center">TRAVELLING</td>
+            </tr>
+            <tr>
+                <td>09:00-15:00</td>
+                <td colspan="5" align="center">SCHOOL</td>
+            </tr>
+            <tr>
+                <td>15:00-18:00</td>
+                <td rowspan="3" align="center">HOME</td>
+                <td rowspan="2" align="center">CRAM SCHOOL</td>
+                <td rowspan="3" align="center">MEETING</td>
+                <td rowspan="2" align="center">CRAM SCHOOL</td>
+                <td rowspan="2" align="center">TRIP</td>
+            </tr>
+            <tr>
+                <td>18:00-21:00</td>
+            </tr>
+            <tr>
+                <td>21:00-23:00</td>
+                <td align="center">HOME</td>
+                <td colspan="2" align="center">SOLVING TESTS</td>
+            </tr>
+            <tr>
+                <td>23:00-00:00</td>
+                <td colspan="5" align="center">SLEEPING MODE</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</body>
+</html>

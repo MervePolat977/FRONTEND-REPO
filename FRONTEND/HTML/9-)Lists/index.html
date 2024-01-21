@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Lists">
+    <meta name="keywords" content="ordered; unordered; lists;">
+    <meta name="definition" content="In this page we will give some codes related to ordered and unordered lists">
+    <title>Lists</title>
+
+    <!--
+    <style>
+        ul {
+            /*list-style-type: disc;*/
+            /*list-style: circle;*/
+            /*list-style: square;*/
+        }
+    </style>
+    -->
+</head>
+<body>
+    <!--Unordered-->
+    <!--
+        list-style-type:none;
+        list-style-type:circle;
+        list-style-type:disc;
+        list-style-type:square;
+    -->
+    <ul style="list-style: circle;">  
+        The biggest cities in Turkey
+        <li>Istanbul</li>
+        <li>Ankara</li>
+        <li>Izmir</li>
+    </ul>
+
+
+    <!--ordered-->
+    <!--
+        list-style-type:lower-alpha;
+        list-style-type:lower-roman;
+        list-style-type:lower-greek;
+        list-style-type:upper-roman;
+        list-style-type:upper-alpha;
+        list-style-type:aupper-greek;
+    -->
+    <ol style="list-style-type: upper-latin;">
+        <li>Merve</li>
+        <li>Yağmur</li>
+        <li>Ezel</li>
+        <li>Aleyna</li>
+    </ol>
+
+
+    <!--type=1,i,I,a,A-->
+    <ol type="1">   
+        Second Ordered List
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ol>
+    <br><br>
+
+    <!--nested lists-->
+    <!--type="bullet  =>default"-->
+    <ol reversed start="5" type="A">
+        This is an ordered List
+        <li>merve</li>
+            <ul>
+                Cities
+                <li>Mardin</li>
+                <li>Istanbul</li>
+            </ul>
+        <li>polat</li>
+        <li>Software Engineering</li>
+    </ol>
+</body>
+</html>

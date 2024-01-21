@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*PSEUDO ELEMENTS*/  
+      p::first-letter {
+        color: red;
+      }
+      p::first-line {
+        color: rgb(31, 22, 204);
+        background: yellow;
+      }
+      p {
+        background: coral;
+      }
+
+      p::before {
+        content: "BEFORE";
+      }
+
+      p::after {
+        content: "AFTER";
+      }
+
+
+
+      /*PSEUDO CLASSES*/
+      a:link{/*link ile ilgili genel özellikler*/
+        color: yellow; 
+      }
+      a:hover{/*linkin üzerine gelince*/
+        color: aqua;
+        font-size: 25px;
+        background: green;
+        text-decoration: none; /*üzerine gelince altı çizili olma hali kalkar*/
+      }
+      a:active{ /*linke tıklayınca*/
+        color: cadetblue;
+      }
+      a:visited{ /*link ziyaret edildikten sonra*/
+        color: black;
+      }
+
+
+      /*textin altı çizililiğini genel olarak kaldırdım*/
+      /*
+      a{
+        text-decoration: none;
+      }*/
+    </style>
+  </head>
+  <body>
+    <p>Pseudo Elements-Sözde Elemanlar <br />Merve Polat</p>
+
+
+
+    <p>Pseudo Classes-Sözde Sınıflar</p>
+    <a href="https://www.google.com.tr/">Go to Google</a><br>
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float">WEB3SCHOOOL</a><br> 
+   <a href="https://blackboard.maltepe.edu.tr/ultra/courses/_86725_1/outline">Blackboard</a> <br>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+            color: red;
+        }
+
+        /*this affects all the img tags*/
+        /*
+        img{
+            border: 5px solid black;
+        }*/
+
+        img[title="comedy-movies"]{
+            border: 5px solid pink;
+        }
+
+        img[width="75%"]{
+            border: 10px dashed yellow;
+        }
+       
+
+
+
+        p[title^="This"]{/*at the beginning of the sentence*/
+            color: orange; 
+        }
+        p[title$="paragraph"]{/*$->at the end of the centence*/
+            color: aqua;
+        }
+        p[title~="fancy"] {/*includes anywhere in the text*/
+            color: rgb(226, 32, 139);
+        }
+
+
+
+
+
+        a[href="https://www.youtube.com/"]:visited {
+            color: green;
+        }
+        a[target="_blank"]{
+            color: yellow;
+        }
+
+
+    
+
+        /*
+        a[href="https://twitter.com/home"]{
+            color: brown;
+            text-decoration: none;
+        }*/
+        a[href="https://twitter.com/home"][target="_blank"]{
+            color: brown;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Attribute Selectors</h2>
+    <img src="images/comedy-movies.jpg" width="50%" alt="" title="comedy-movies"><br><br>
+    <img src="images/horror-movies.jpg" width="50%" alt="" title="horror-movies"><br><br>
+    <img src="images/love-movies.jpg" width="75%" alt="" title="love-movies"><br><br>
+    <img src="images/thriller-movies.jpg" width="75%" alt="" title="thriller-movies"><br><br><br><br>
+
+
+    <p title="This is a paragraph.">Paragraph1</p>
+    <p title="This is not a paragraph,,">Paragraph2</p>
+    <p title="is a paragraph">Paragraph3</p>
+    <p title="Hey there!Some fancy words exits in the world">paragraph4</p><br><br><br><br>
+
+
+
+    <a href="https://www.google.com.tr/" target="_blank">GOOGLE</a><br>
+    <a href="https://www.youtube.com/">YOUTUBE</a><br><br><br><br>
+
+
+
+    <a href="https://twitter.com/home" target="_blank">TWITTER</a><br>
+    <a href="https://twitter.com/home" title="bla">TWITTER</a>
+</body>
+</html>

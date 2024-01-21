@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        /*AltGr+Ü = ~*/
+        /*means: select the elements which is siblings to p-with-no-div element /the one at the same level. BUT IT SELECTS AFTER ONES, NOT BEFORE ONES*/
+        /*
+        #p-with-no-div ~ div{
+            font-size: 40px;
+        }*/
+
+        /*chose the one who is sibling and comes after it and which is first*/
+        #p-with-no-div + div {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Here is the inside of the div
+        <p class="paragpraph1">
+            Paragraph1
+        </p>
+
+        <p class="paragraph2">
+            Paragraph2
+        </p>
+
+        <p class="paragraph3">
+            Paragraph3
+        </p>
+    </div>
+
+    <p id="p-with-no-div">Paragraph that is excluded(outside) of the divs</p>
+
+    <div>
+        <p>Paragraph with div but no class</p>
+    </div>
+
+    <div class="container">
+        <h2>div2</h2>
+    </div>
+</body>
+</html>
